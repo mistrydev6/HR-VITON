@@ -53,6 +53,16 @@ Here are the download links for each model checkpoint:
 python3 test_generator.py --occlusion --cuda {True} --test_name {test_name} --tocg_checkpoint {condition generator ckpt} --gpu_ids {gpu_ids} --gen_checkpoint {image generator ckpt} --datasetting unpaired --dataroot {dataset_path} --data_list {pair_list_textfile}
 ```
 
+## GUI Demo
+
+A simple Tkinter-based interface is provided in `gui.py` for testing the model with custom images. Run:
+
+```bash
+python gui.py
+```
+
+Select a person image, a garment image and its corresponding mask in the window to generate and display the try-on result.
+
 ## Train try-on condition generator
 
 ```python
